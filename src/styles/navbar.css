@@ -85,7 +85,6 @@
     background: #0056b3; /* Darker blue on hover */
     transform: translateY(-2px); /* Slight lift effect */
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
@@ -93,55 +92,11 @@
     }
 
     .nav-content {
-        flex-direction: column;
-        align-items: flex-end; /* Align items to the right */
+        display: flex;
+        justify-content: flex-end;
     }
 
     .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-buttons {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
     }
 }
-
-
-
-
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background: white;
-      padding: 10px;
-      width: 100%;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  }
